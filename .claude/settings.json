@@ -4,7 +4,8 @@
       "Bash(node)",
       "Bash(node generate_washington.js)",
       "Bash(node -e ' *)",
-      "Bash(del \"c:/Users/NVX/OneDrive - CSI Group/Documents/PATO/Páginas Web/Apostillados/generate_washington.js\")"
+      "Bash(del \"c:/Users/NVX/OneDrive - CSI Group/Documents/PATO/Páginas Web/Apostillados/generate_washington.js\")",
+      "WebFetch(domain:apostillalegatille.com)"
     ]
   }
 }
