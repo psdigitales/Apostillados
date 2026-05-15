@@ -130,6 +130,28 @@ Al hacer las substituciones, hay ocurrencias de "Texas" que deben **permanecer i
 
 ---
 
+## Reglas de diseño obligatorias
+
+### Sección de instrucciones para sacar una apostilla
+Siempre que una página incluya una sección con instrucciones o pasos de cómo solicitar/obtener una apostilla, esa sección **debe tener dos columnas**:
+
+- **Columna izquierda (`width="2/3"`)** — título, texto con los pasos e instrucciones, y botón de cotización.
+- **Columna derecha (`width="1/3"`)** — bloque `[bt_bb_image]` vacío (`image=""`) para insertar una imagen desde la Biblioteca de Medios de WordPress.
+
+Estructura Bold Page Builder a usar:
+```
+[bt_bb_row column_gap="30"]
+  [bt_bb_column width="2/3" align="left" vertical_align="top" padding="15" lazy_load="yes" bb_version="4.7.6"]
+    ... título, texto, separadores, botón ...
+  [/bt_bb_column]
+  [bt_bb_column width="1/3" align="center" vertical_align="middle" padding="normal" lazy_load="yes" bb_version="4.7.6"]
+    [bt_bb_image lazy_load="yes" image="" size="full" shape="square" align="center" hover_style="simple" bb_version="5.6.9"][/bt_bb_image]
+  [/bt_bb_column]
+[/bt_bb_row]
+```
+
+---
+
 ## Notas técnicas
 
 - **Formulario de cotización:** Usa el plugin `bt_cost_calculator` con Contact Form 7 (CF7 ID: 6973). El mismo formulario sirve para todos los estados.
